@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+:root {
+    --main: #004282; /* Main color */
+    --back: #ebebeb; /* Background color */
+}
+
+html {
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+body {
+    position: relative;
+    scroll-behavior: smooth;
+    font-family: "Source Code Pro", 'Courier New', Courier, monospace;
+    letter-spacing: 0.082em;
+    color: var(--main);
+    /* overflow: hidden; */
+
+}
+a{
+    text-decoration: none;
+    color: var(--main);
+}
+a:visited{
+    color: var(--main);
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+    transition: all 0.5s ease; /* Smooth transition for height */
+}
+.menu.open{
+    height: 82vh; /* Height when menu is open */
+}
+.menu img{
+    max-width: 82px;
+    height: 100%;
+    border-radius: 2em;
+    cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+
+h1{
+    justify-self: center;
+}
+    /* overwrite form */
+h4{
+font-family: "Source Code Pro", 'Courier New', Courier, monospace !important;
+}
+
+p{font-family: "Source Code Pro", 'Courier New', Courier, monospace !important; 
+}
+
+input{font-family: "Source Code Pro", 'Courier New', Courier, monospace !important; 
+}
+/* canvas */
+canvas {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -100;
+    filter: blur(2px);
+    letter-spacing: 0.082em;
+    scale: 1.82;
+    transform: translate3d(0,0,0);
+    filter:url(#warp) blur(1px);
+
+}
+.info{
+    /* font-family: "Source Serif 4", Georgia, 'Times New Roman', Times, serif; */
+    /* font-weight: bold; */
+
+    justify-content: center;
+
+    display: flex;
+    /* margin-top: 42vh; */
+    height: 50vh;
+    text-shadow: 4px 3px 4px var(--main)
+
+}
+.about{
+    max-width: 420px;
+    color: white;
+    background-color: var(--main);
+    padding: 2em;
+    margin: auto;
+    border-radius: 0.82em;
+    
+}
+.isthisthemanifest{
+    margin-top: 100vh;
+    display:none;
+}
+
+
+
+.wet{
+   filter:url(#warp) blur(1px);
+}
+footer {
+    position: absolute; /* Change from fixed to relative */
+    /* bottom: 0; */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    filter: url(#warp);
+ 
+    font-size: smaller;
+}
+
+/* Initially hide the menu items */
+.menu-items {
+    display: none; /* Hide items by default */
+    opacity: 0; /* Start with opacity 0 */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+
+.menu.open .menu-items {
+    display: block; /* Show items when menu is open */
+    opacity: 1; /* Fade in items */
+}

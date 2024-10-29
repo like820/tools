@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>waterlike™</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+ 
+    
+    <footer>
+   
+    
+        <!-- <div class="links">
+     <a href="https://linktr.ee/waterlike" target="_blank">links</a>  
+        </div> -->
+        <div class="credits">
+            <p> waterlike™820</p>
+            <!-- <p><a href="index.html">Back to Index</a></p> -->
+            <div class="contact">
+                <a href="mailto:jak@waterlike.world">💧</a>
+            </div>
+        </div>
+    </footer>
+    <svg class="svg">
+        <filter id="warp"> 
+          <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.001"| numOctaves="1" result="waves"
+          ></feTurbulence>
+      <feColorMatrix in="waves" type="hueRotate">
+      <animate
+      attributeName="values" 
+      values="0;360" 
+      dur="8s" 
+      repeatCount="indefinite"
+      ></animate>
+      </feColorMatrix>
+      <feDisplacementMap
+    xChannelSelector="R" 
+    yChannelSelector="G"
+      scale="50"
+      in="SourceGraphic"
+      ></feDisplacementMap>
+      </svg>
+      <script src="script.js"></script>
+</body>
+</html>

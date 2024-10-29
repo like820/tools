@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, minimal-ui, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <title>waterlike™</title>
+        <link rel="stylesheet" href="waterlike.css">
+       
+        
+    </head>
+<script>    
+    function coordinate(event) {
+                let x = event.pageX/(window.innerWidth/10);
+                let y = event.pageY/(window.innerHeight/10);
+            //move shadow of
+            // document.querySelector('.info').style.textShadow = x+ "px "+ y + "px "+ (x+y+3) +"px #000082";
+            // document.querySelector('.isthisthemanifest').style.filter= 'blur(' + (10-y+x/10) +'px)';
+            // document.querySelector('.about').style.filter= 'blur(' + (10-y+x/3) +'px)';
+        
+            }
+
+</script>
+    <body onmousemove="coordinate(event)">
+
+    
+            
+ 
+    <div class="isthisthemanifest">
+        <h1>Wet Evolution: In the shimmering of the fluidity</h1>
+            
+        <h1>Water-Like Fluid Manifesto:</h1>
+        
+        <p>Change and embracing the whispers of fluidity,</p>
+        
+        <b>Questioning, Not Just Answering:</b> 
+        <p>We raise not just one voice, but a symphony of inquiry. In a world drowning in certainties, we dive into the depths of curiosity. We don't just solve; we question the very essence of the problems. With each query, we carve a pathway towards innovation, shaping a destiny not dictated by norms but born from the womb of curiosity.</p>
+        
+        <b>Particles of Water, Shaping Worlds:</b> 
+        <p>United, we are as particles of water, adaptable and relentless. Together, we cascade and carve, just as water shapes stone. Our unity is not a stagnant pond but a flowing river, nurturing and shaping the landscapes of progress. Our community stands strong, knowing that even in our smallest droplet, we hold the power to reshape the world.</p>
+        
+        <b>High and Low Tones in Harmony:</b> 
+        <p>In the quiet ripple and the roaring wave, we find our voice.</p>
+        
+        <b>Dance of Reflections:</b> 
+        <p>Like water reflecting the world around it, we mirror the beauty of nature's design. Through looking through the water lens, we forge an intricate tapestry where technology embraces nature's elegance. We're not confined to rigid lines; we're the dance of reflections, embracing both the organic and the innovative.</p>
+        
+        <b>Reshaping Boundaries:</b> 
+        <p>In a realm where boundaries blur and mingle, we challenge the status quo. Have you questioned the conventional? We question the very borders that hold us back. We want to dismantle the barriers that separate disciplines, genders, and nations, creating a mosaic where each fragment contributes to the masterpiece of human progress.</p>
+        
+        <b>The Currents of Togetherness:</b> 
+        <p>Water flows in unity, and so do we. Like the currents that intertwine, we weave a tapestry of togetherness. We celebrate diversity as the threads that enrich our collective fabric. With each droplet of action, we create ripples that unite us all, regardless of distance or difference.</p>
+        
+        <p>In the water's embrace, we find the essence of life. Embrace this essence, to be the particles of change, shaping a world as fluid and adaptable as water itself.</p>
+        
+        <p>The journey is not just about finding answers; it's about exploring the questions.</p></div>
+    </div>
+    
+        <script type="module" src="flowmap.js"></script>
+        
+        <footer>
+       
+        
+            <!-- <div class="links">
+         <a href="https://linktr.ee/waterlike" target="_blank">links</a>  
+            </div> -->
+            <!-- <div class="credits">
+                <a href="index.html">waterlike™2024</a>
+            </div> -->
+        </footer>
+        <svg class="svg">
+            <filter id="warp"> 
+              <feTurbulence
+              type="fractalNoise"
+              baseFrequency="0.001"| numOctaves="1" result="waves"
+              ></feTurbulence>
+          <feColorMatrix in="waves" type="hueRotate">
+          <animate
+          attributeName="values" 
+          values="0;360" 
+          dur="8s" 
+          repeatCount="indefinite"
+          ></animate>
+          </feColorMatrix>
+          <feDisplacementMap
+        xChannelSelector="R" 
+        yChannelSelector="G"
+          scale="50"
+          in="SourceGraphic"
+          ></feDisplacementMap>
+          </svg>
+    </body>
+</html>
