@@ -254,9 +254,9 @@ import { Renderer, Program, Texture, Mesh, Vec2, Flowmap, Triangle } from '../sr
 
 
     
-const menu = document.querySelector('.menu');
-const burger = document.querySelector('.menu img:last-child'); // Assuming burger.png is the last image in the menu
+// const menu = document.querySelector('.menu');
+// const burger = document.querySelector('.menu img:last-child'); // Assuming burger.png is the last image in the menu
 
-burger.addEventListener('click', () => {
-    menu.classList.toggle('open');
-});
+// burger.addEventListener('click', () => {
+//     menu.classList.toggle('open');
+// });

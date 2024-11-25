@@ -20,7 +20,7 @@ body {
     transition: all 1s ease;
     transition: background-color 0.5s ease; /* Smooth transition for background color */
     /* overflow: hidden; */
-    width: 100vw;
+    /* width: 100vw; */
 
 }
 body.dark{
@@ -32,9 +32,7 @@ body.dark{
     filter:blur(1px);
 
 } */
-body > img{
-    width: 100%;
- }
+
 a{
     text-decoration: none;
     color: var(--main);
@@ -67,19 +65,27 @@ a:visited{
     cursor: pointer; /* Change cursor to pointer for better UX */
     max-height: 420px;
 }
-
+.linkCategory{
+   margin-top: 2em;
+}
 
 h1{
-    justify-self: center;
-    font-size: 3em;
+    /* justify-self: center; */
+    font-size: clamp(4rem, 8vw, 8rem);
+
 }
 h2{
     font-weight: 600;
-    font-size:2em;
     letter-spacing: 0;
+    font-weight: 600;
+    font-size: clamp(2rem, 4vw + 2rem, 6rem);
+    font-weight: lighter;
+    letter-spacing: 0;
+    font-family: "Source Serif 4", serif;
 }
 h3{
     font-weight: 400;
+    font-size: clamp(1rem, 1vw + 1rem, 4rem);
 }
     /* overwrite form */
 h4{
@@ -93,6 +99,25 @@ p{font-family: "Source Code Pro", 'Courier New', Courier, monospace !important;
 input{font-family: "Source Code Pro", 'Courier New', Courier, monospace !important; 
 }
 /* canvas */
+/* Initial styles for the hero image and headline */
+.hero{
+    text-align: center;
+}
+
+.headline {
+    /* opacity: 0; Start hidden */ 
+    /* transform: translateY(-18em); /* Start below the viewport */
+    /* transition: all 1s ease; Animation */
+    display: table;
+    margin: auto;
+}
+
+
+
+.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+}
 
 
 .about{
@@ -105,7 +130,24 @@ input{font-family: "Source Code Pro", 'Courier New', Courier, monospace !importa
     
 }
 .isthisthemanifest{
-    display:none;
+    padding: 2em;
+    margin: auto;
+    filter: drop-shadow(2px 4px 6px black);
+    border: aqua;
+border: 0.082em dashed;
+    border-radius: 8em;
+}
+
+.isthisthemanifest p{
+    padding: 1em;
+    background-color: var(--back);
+
+}
+.isthisthemanifest b{
+    padding: 1em;
+    position: sticky;
+    top: 4em;
+    background-color: var(--back);
 }
 
 .floatie{
@@ -127,7 +169,7 @@ font-size: 1.6em;
 }
 footer {
     position: absolute; /* Change from fixed to relative */
-    /* bottom: 0; */
+    bottom: 0;
     left: 0;
     width: 100%;
     text-align: center;
@@ -153,14 +195,22 @@ footer {
     transition: all 2s ease;
 }
 .step-container{
-
+width: 80%;
 margin: auto;
 max-width: 820px;
 }
-.step{
-    width:80%;
-    margin: auto;
 
+.step{
+
+    margin: auto;
+    border-color: #004282;
+    /* border: solid 0.2em;
+    border-radius: 3em;
+    padding: 4em; */
+
+}
+.step-container .step{
+    margin-top: 4rem;
 }
 .step img{
     width: 100%;
@@ -170,6 +220,10 @@ max-width: 820px;
 #waterlikeLogo{
     text-align: center;
     display: none;
+}
+#directoryLogo{
+    width: 100px;
+    padding: 2em;
 }
 iframe{
     width: 100%;
@@ -212,6 +266,8 @@ iframe{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(42px);
     transition: all 0.82s;
+    width: fit-content;
+    max-height: 820px;
 }
 
 .tooltip {
@@ -225,6 +281,7 @@ iframe{
     max-width: 200px;
     margin-left: -4em;
     filter: drop-shadow(2px 4px 8px black);
+    font-size: large;
 }
 .keywordTitles{
     display: flex;
@@ -288,8 +345,24 @@ iframe{
 }
 
 /* Ensure all relevant text elements are hidden initially */
-.links h1, .links h2 {
+.links h1 {
     opacity: 0; /* Ensure they are hidden before the animation */
+}
+.links a{
+    font-size: 1.5em;
+    padding: 1em;
+    display: flex;
+   justify-content: center;
+}
+.directory{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2em;
+    column-gap: 2em;
 }
 
 .hidden {
@@ -303,4 +376,112 @@ iframe{
     left: 0;
     pointer-events: none;
     filter: blur(4px);
+    scale: 1.1;
+    z-index: -100;
   }
+
+.step {
+    opacity: 0; /* Start hidden */
+    transform: translateY(2em); /* Start slightly below */
+    transition: all 1s ease; /* Animation */
+}
+
+.step.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+}
+
+
+.pricing-container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    padding: 1em; /* 20px to em (1.25em) */
+    gap: 1em; /* 20px to em (1.25em) */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* max-width: 82%; */
+    margin: auto;
+    margin-bottom: 4em;
+  
+}
+
+.pricing-card {
+    background-color: var(--back); /* Use the defined background color */
+    border: 0.082em dashed var(--main); /* Use variable for border color */
+    border-radius: 0.5em; /* Adjusted to em */
+    padding: 1em; /* 20px to em (1.25em) */
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling */
+    position: sticky;
+    top: 0;
+    width: 15em;
+    height: 15em;
+    width: clamp(8rem, 20vw + 8rem, 24rem);
+
+}
+
+.pricing-card:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    box-shadow: 0.5em 0.5em var(--main); /* Add shadow on hover */
+}
+
+.pricing-card h3 {
+    margin-top: 0;
+}
+.pricing-card ul {
+    height: 42%;
+}
+
+
+.cta-button {
+    background-color: var(--main); /* Use the defined main color */
+    color:var(--back) ;
+    border: none;
+    border-radius:1em; /* Adjusted to em */
+    padding: 1em; /* 10px 15px to em */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color change */
+   
+    bottom: 1em;
+    position: fixed;
+}
+.testimonial-strip {
+    background-color: var(--back); /* Use the defined background color */
+    overflow: hidden; /* Hide overflow for scrolling effect */
+    position: relative; /* Position relative for inner scrolling */
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: row; /* Align testimonials in a row */
+   
+
+}
+
+.testimonial {
+    padding: 1em; /* Padding for each testimonial */
+    width: 15em; /* Fixed width for each testimonial */
+    margin: 0 1em; /* Margin between testimonials */
+    transition: transform 0.3s ease; /* Smooth scaling */
+    background-color: var(--back);
+    animation: scroll 30s linear infinite; /* Scroll animation */
+}
+
+.testimonial:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%); /* Move left by 100% of the container */
+    }
+}
+
+/* Pause scrolling on hover */
+.testimonial-strip:hover .testimonial-container {
+    animation-play-state: paused; /* Pause the animation */
+}
