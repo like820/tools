@@ -132,10 +132,10 @@ input{font-family: "Source Code Pro", 'Courier New', Courier, monospace !importa
 .isthisthemanifest{
     padding: 2em;
     margin: auto;
-    filter: drop-shadow(2px 4px 6px black);
-    border: aqua;
+    /* filter: drop-shadow(2px 4px 6px black); */
+    /* border: aqua; */
 border: 0.082em dashed;
-    border-radius: 8em;
+    border-radius: 4em;
 }
 
 .isthisthemanifest p{
@@ -144,9 +144,10 @@ border: 0.082em dashed;
 
 }
 .isthisthemanifest b{
+    border-radius: 1em;
     padding: 1em;
     position: sticky;
-    top: 4em;
+    top: 6em;
     background-color: var(--back);
 }
 
