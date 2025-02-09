@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('reveal-content');
 
     // Set a timeout to remove the overlay after the animation
-    setTimeout(() => {
-        const overlay = document.getElementById('overlay');
-        overlay.style.display = 'none'; // Hide overlay after animation
-    }, 1000); // Match the duration of the animation
+    // setTimeout(() => {
+    //     const overlay = document.getElementById('overlay');
+    //     overlay.style.display = 'none'; // Hide overlay after animation
+    // }, 1000); // Match the duration of the animation
 });
 
 burger.addEventListener('click', () => {
@@ -81,7 +81,6 @@ document.addEventListener('scroll', () => {
     let checkbox = document.querySelector(".wetcheckbox");
     checkbox.addEventListener('change', () => {
         document.body.classList.toggle('wet');
- 
             let blurValue = 0;
             let blurInterval = setInterval(() => {
                 blurValue += 1;
@@ -102,6 +101,13 @@ document.addEventListener('scroll', () => {
             }, 22);
      
     });
+    //darkmode
+    let checkboxDark = document.querySelector(".darkcheckbox");
+    checkboxDark.addEventListener('change', () => {
+        document.body.classList.toggle('dark');
+     
+    });
+
 
 //tooltip for more info
 
