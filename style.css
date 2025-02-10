@@ -209,7 +209,7 @@ max-width: 820px;
     /* border: solid 0.2em;
     border-radius: 3em;
     padding: 4em; */
-
+padding:0 2em 0 2em;
 }
 .step-container .step{
     margin-top: 4rem;
