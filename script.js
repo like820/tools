@@ -43,12 +43,6 @@ document.addEventListener('scroll', () => {
         lastScrollY = currentScrollY; // Update the last scroll position
         lastCheckTime = currentTime; // Update the last check time
     }
-    // let floatie = document.querySelector('.floatie');
-    // if(window.scrollY>650){
-        galleryItems.forEach((item) => {
-            item.classList.remove('enlarged');
-        });
-    // }
 });
 
 
@@ -65,7 +59,6 @@ document.addEventListener('scroll', () => {
     //enlarge pictures on click and remove class when another gallery-item is clicked
 
     let galleryItems = document.querySelectorAll('.gallery-item img');
-
     galleryItems.forEach((item) => {
         item.addEventListener('click', () => {
             galleryItems.forEach((otherItem) => {
@@ -81,6 +74,7 @@ document.addEventListener('scroll', () => {
     let checkbox = document.querySelector(".wetcheckbox");
     checkbox.addEventListener('change', () => {
         document.body.classList.toggle('wet');
+ 
             let blurValue = 0;
             let blurInterval = setInterval(() => {
                 blurValue += 1;
@@ -103,8 +97,10 @@ document.addEventListener('scroll', () => {
     });
     //darkmode
     let checkboxDark = document.querySelector(".darkcheckbox");
-    checkboxDark.addEventListener('change', () => {
+    checkbox.addEventListener('change', () => {
         document.body.classList.toggle('dark');
+ 
+
      
     });
 
@@ -192,8 +188,8 @@ document.querySelectorAll('.toggle-title').forEach(element => {
       kiki: 0.5,
       points: 12,
       size: 40,
-      targetKiki: 0.5,
-      targetPoints: 12,
+      targetKiki: 0.9,
+      targetPoints: 42,
       targetSize: 40,
       time: 0
     };
@@ -289,8 +285,8 @@ document.querySelectorAll('.toggle-title').forEach(element => {
       
       target.addEventListener('mouseleave', () => {
         shape.targetKiki = 0.5;
-        shape.targetPoints = 12;
-        shape.targetSize = 40;
+        shape.targetPoints = 2;
+        shape.targetSize = 4;
       });
     });
 

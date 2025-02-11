@@ -1,187 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="waterlike™ is a fluid practice that encourages creativity and collaboration through innovative design and open-source principles.">
-    <title>waterlike™</title>
-   
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-</head>
-<body>
-    <div class="menu"> 
-        <canvas id="cursorCanvas" aria-label="Cursor Canvas"></canvas>
-        <a href="index.html" aria-label="Go to source section"><img id="logo" src="assets/logo.webp" alt="waterlike logo"></a>
-        <div class="menu-items">
-            <h3>waterlike™ is fluid practice</h3>
-            <a href="index.html"><h2>index 🏡</h2></a>   
-            <a class="wet" href="recipe.html"><h2>recipe™ 🗒️</h2></a> 
-            <!-- <a href="videoGuideScroll/index.html"><h2>guide™ 🌊</h2></a>     -->
-            <a href="about.html"><h2>about 🌊</h2></a>   
-            
-            <p class="wetMode">
-                <label for="wetMode">💧</label>
-                <input type="checkbox" class="wetcheckbox" id="wetMode"> 
-            </p>
-            <p class="darkMode">
-                <label for="darkMode">💧</label>
-                <input type="checkbox" class="darkcheckbox" id="darkMode"> 
-            </p>
-        </div>
-<!-- menu -->
-        <img id="burger" src="assets/burger.webp" alt="Menu burger icon">
-    </div>
-
-    <div class="wet" id="waterlikeLogo">
-        <p>waterlike™</p> 
-    </div>
-<!-- tagline -->
-    <div class="step headline">
-        <h1>waterlike™</h1>
-        <h2>toolbox for thoughts 💭</h2>
-        <h3>container for your dreams, plans and memories</h3>
-    </div>
-<!-- hero image -->
-    <div class="step hero">
-        <img class="hero toggle-title shape-target" data-kiki="0.4" data-points="5" data-size="82" title="come get wet" src="assets/HeroC.webp" alt="Hero image representing waterlike concept with a BoxOfThoughts packshot">
-    </div>
-    <div class="step-container">
-<!-- embedded form -->
-   
-
-        <!-- <div class="step">  
-            <div class="about" id="recipe">
-                <div class="ml-embedded" data-form="XrVl3n"></div>
-            </div>
-        </div>   -->
-
-
- <!-- testimonials -->  
-<div class="step">
-
-    <div class="testimonial-strip">
-        <div class="testimonial-container">
-            <div class="testimonial">
-                <p>"waterlike™ has transformed my creative process!"</p>
-                <h4>- User 8</h4>
-            </div>
-            <div class="testimonial">
-                <p>"it allows me to experiment and innovate freely."</p>
-                <h4>- User 2</h4>
-            </div>
-            <div class="testimonial">
-                <p>"i feel empowered to create, loved the workshops"</p>
-                <h4>- User 0</h4>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- gallery -->
-        <div class="step">
-            <div class="gallery">     
-            
-                <div class="keywordTitles">
-                    <h3 class="toggle-title" title="Thought out and iterative distributed manufacturing product">🔍 Research-Driven Design</h3>
-                    <h3 class="toggle-title" title="Meant to be shared, DIY, open-source">📝 Open & Transparent</h3>
-                    <h3 class="toggle-title" title="When it's possible gathering locally to flow together">🤝 Workflow Workshops</h3>
-                </div>
-              
-            </div>
-        </div>
-        <div class="step">    
-            
-            <div class="bannerTest">
-                <h1> 🖨️ & ✂️</h1>
-                <p>print the guide and make it</p> 
-               
-            </div>
-            <h3>use as a notebook📒, journal💭, calendar🗓️ or ...</h3> 
-
-           
-
-        </div>
-
-      
-        <div class="step">
-      
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, minimal-ui, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+        <link rel="icon" type="image/png" href="assets/favicon.png">
+        <title>waterlike™</title>
+        <!-- <link rel="stylesheet" href="waterlike.css"> -->
+        <link rel="stylesheet" href="style.css">
        
-            
-            <div class="gallery">
-                <div class="gallery-item parallax" data-speed="0.3">
-                    <img src="assets/boxThoughts1.webp" alt="Postcards laying in a pseudo random arrangement with the top one showing the backside" data-speed="0.3">
-                    <p>box as sketchbook and frame</p> 
+        
+    </head>
+<script>    
+    function coordinate(event) {
+                let x = event.pageX/(window.innerWidth/10);
+                let y = event.pageY/(window.innerHeight/10);
+            //move shadow of
+            // document.querySelector('.info').style.textShadow = x+ "px "+ y + "px "+ (x+y+3) +"px #000082";
+            // document.querySelector('.isthisthemanifest').style.dropShadow= 'blur(' + (10-y+x/10) +'px)';
+            // document.querySelector('.about').style.filter= 'blur(' + (10-y+x/3) +'px)';
+        
+            }
+
+</script>
+    <body onmousemove="coordinate(event)">
+
+    
+        <div class="menu"> 
+            <canvas id="cursorCanvas" aria-label="Cursor Canvas"></canvas>
+            <a href="#" aria-label="Go to source section"><img id="logo" src="assets/logo.webp" alt="waterlike logo"></a>
+            <div class="menu-items">
+                <h3>waterlike™ is fluid practice</h3>
+                <a href="index.html"><h2>home 🏡</h2></a> 
+                <a href="about.html"><h2>about 🌊</h2></a>   
+                <a  class="wet" href="recipe.html"><h2>recipe™ 🗒️</h2></a>   
+                
+                <p class="wetMode">
+                    <label for="wetMode">💧</label>
+                    <input type="checkbox" class="wetcheckbox" id="wetMode"> 
+                </p>
+       
+            </div>
+        
+            <img id="burger" src="assets/burger.webp" alt="Menu burger icon">
+        </div>
+       
+        <div class="wet" id="waterlikeLogo">
+            <p>waterlike™</p> 
+        </div> 
+        <canvas id="cursorCanvas" aria-label="Cursor Canvas"></canvas>
+        <div id="overlay"></div>
+        <div class="links">
+            <!-- <h1>let's get wet</h1> -->
+            <div class="linkCategory">
+              
+                    <!-- <a href="https://www.instagram.com/waterlike.world/"  target="_blank"><h2>instagram 📸</h2></a> 
+                    <a href="https://www.github.com/like820/"  target="_blank"> <h2>github 🧑‍💻</h2></a>
+                    <a href="mailto:jak@waterlike.world"  id="email-link" target="_blank"> <h2>mail 💌</h2></a> -->
+                        
+
+                 
+            </div>
+            <!-- <div class="linkCategory">
+                   
+                    <a href="https://www.waterlike.world.com/risoTool"> <h2>risoTool</h2></a>
+                    <a href="https://www.waterlike.world.com/postcards"> <h2>postcardMaker</h2></a>
+                    <a href="https://www.waterlike.world.com/postcards2024"> <h2>postcardShower</h2></a>
+                
+            </div> -->
+        </div>
+        <div class="step-container">
+  
+    <!-- <h2>waterlike™problem</h2> -->
+   
+   
+ 
+    <h1 class="step wet">💭🧊💧</h1>
+    <h2 class="step">how to navigate in overflooded world?</h2>
+    <h3 class="step wet">let's get wet and learn how to swim</h3>
+    <!-- <h3 class="step">flowing, changing, adapting, shaping</h3> -->
+     <!-- <div class="gallery"> -->
+<img src="assets/water.webp" class="step gallery-item" alt="">
+<!-- </div> -->
+    <!-- <h1 class="step">
+     we can do it ourselves
+    </h1>
+    <h1 class="step">
+        together
+       </h1> -->
+  
+        
+
+
+        <div class="step">
+            <div class="isthisthemanifest step">
+                <h2>wet evolution</h2>
+                <h3>in the shimmering of the fluidity</h3>
+                <div>
+                    <b class="step">...</b> 
+                <p class="step">change  embracing the whispers of the water</p>
+          
                 </div>
-                <div class="gallery-item parallax" data-speed="0.3">
-                    <img src="assets/boxPrototype12.webp" alt="Blueprint of box for thoughts. Piece of paper with graphics and assembly guide" data-speed="0.3">
-                    <p>boxForThoughts Blueprint</p> 
+                <!-- <b class="step">questioning, not just answering:</b> 
+                <p class="step">we raise not just one voice, but a symphony of inquiry. in a world drowning in certainties, we dive into the depths of curiosity. we don't just solve; we question the very essence of the problems. with each query, we carve a pathway towards innovation, shaping a destiny not dictated by norms but born from the womb of curiosity.</p>
+                 -->
+                <div>
+                    <b class="step">particles of water, shaping worlds:</b> 
+                <p class="step">united, we are as particles of water, adaptable and relentless. together, we cascade and carve, just as water shapes stone. our unity is not a stagnant pond but a flowing river, nurturing and shaping the landscapes of progress. our community stands strong, knowing that even in our smallest droplet, we hold the power to reshape the world.</p>
+                </div>
+            <div>
+                <b class="step">high and low tones in harmony:</b> 
+                <p class="step">in the quiet ripple and the roaring wave, we find our voice.</p>
+            </div>
+                <!-- <b class="step">dance of reflections:</b> 
+                <p class="step">like water reflecting the world around it, we mirror the beauty of nature's design. through looking through the water lens, we forge an intricate tapestry where technology embraces nature's elegance. we're not confined to rigid lines; we're the dance of reflections, embracing both the organic and the innovative.</p>
+                 -->
+            <div>
+                <b class="step">reshaping boundaries:</b> 
+                <p class="step">in a realm where boundaries blur and mingle, we challenge the status quo. have you questioned the conventional? we question the very borders that hold us back. we want to dismantle the barriers that separate disciplines, genders, and nations, creating a mosaic where each fragment contributes to the masterpiece of human progress.</p>
+            </div>
+            <div>
+                <b class="step">the currents of togetherness:</b> 
+                <p class="step">water flows in unity, and so do we. like the currents that intertwine, we weave a tapestry of togetherness. we celebrate diversity as the threads that enrich our collective fabric. with each droplet of action, we create ripples that unite us all, regardless of distance or difference.</p>
+            </div>
+                <!--            
+
+                <p class="step">in the water's embrace, we find the essence of life. embrace this essence, to be the particles of change, shaping a world as fluid and adaptable as water itself.</p>
+                 -->
+                <h3 class="step">🌊 or dive</h3>
+            </div>
+        </div>  
+    
+
+ 
+    
+        <!-- <div class="step">
+            <div class="pricing-container">
+                <div class="pricing-card free step">
+                    <h3>Do It Yourself</h3>
+                    <ul>
+                        <li>Open-source</li>
+                        <li>Access to community resources</li>
+                        <li>support</li>
+                    </ul>
+                    <button class="cta-button">DIY</button>
+                </div>
+                <div class="pricing-card buy step">
+                    <h3>Make Together</h3>
+                    <ul>
+                        <li>Buy Kit</li>
+                        <li>Limited Products </li>
+                        <li>support</li>
+                    </ul>
+                    <button class="cta-button">Contact Us</button>
+                </div>
+                <div class="pricing-card corporate step">
+                    <h3>Or</h3>
+                    <ul>
+                        <li>Order workshops for company</li>
+                        <li>Custom solutions</li>
+                        <li>personal support</li>
+                    </ul>
+                    <button class="cta-button">BUY</button>
                 </div>
             </div>
-        </div>
-    
-            <div class="step">
-                <div class="pricing-container">
-                    <div class="pricing-card free step">
-                        <h3>DIY</h3>
-                        <ul>
-                            <li>Do It Yourself</li>
-                            <li>Access Open Toolkits</li>
-                            <li>Together</li>
-                        </ul>
-                        <button class="cta-button">Get Recipe</button>
-                    </div>
-                    <div class="pricing-card buy step">
-                        <h3>BUY</h3>
-                        <ul>
-                           
-                            <li>Limited Products </li>
-                            <li>Expensive</li>
-                            <li>Deal</li>
-                        </ul>
-                        <button class="cta-button">Sold Out</button>
-                    </div>
-                    <div class="pricing-card corporate step">
-                        <h3>B2B</h3>
-                        <ul>
-                            <li>Offer On Request</li>
-                            <li>Drop Of Creativity</li>
-                            <li>Custom solutions</li>
-                        </ul>
-                        <button class="cta-button">Contact Us</button>
-                    </div>
-                </div>
-      </div>
- 
-  <!-- <div class="step">
-    <iframe src="videoGuideScroll/index.html" frameborder="0"></iframe>
-  </div> -->
+        </div> -->
 
-        <div class="step"> 
-            <p>Do It Yourself can be easier together.</p>
-            <p>Each project aims to be thoroughly open, adaptable, provides clear steps, and ideas for sourcing materials locally.</p>
-            <p>make this world a wetter place</p>
-        </div>
-    </div> 
 
-<footer>
-    <div class="credits">
-        <p><a href="#source" aria-label="Go to source section">💧</a></p>
-        <a id="email-link" href="mailto:waterlike820@example.com" aria-label="Email waterlike"> <h3>waterlike™820</h3></a>
-        <div id="copy-message" class="copy-message" style="display: none;">Email copied <3</div>
+    <div class="gallery step">
+        <img src="assets/floatie.webp" class="gallery-item" alt="">
+    <div class="about gallery-item" id="recipe">
+        <div class="ml-embedded" data-form="nPvTXa"></div>
     </div>
-</footer>
 
-<div id="tooltip" class="tooltip" style="display: none;"></div>
-<svg class="svg">
-    <filter id="warp"> 
-        <feTurbulence type="fractalNoise" baseFrequency="0.001" numOctaves="1" result="waves"></feTurbulence>
-        <feColorMatrix in="waves" type="hueRotate">
-            <animate attributeName="values" values="0;360" dur="8s" repeatCount="indefinite"></animate>
-        </feColorMatrix>
-        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="50" in="SourceGraphic"></feDisplacementMap>
-    </filter>
-</svg>
-<script src="script.js"></script>
-  
-</body>
+
+</div>
+
+<h2 class=" step wet">drop by drop💧</h2>
+</div>
+    <script src="script.js"></script>
+        <script type="module" src="flowmap.js"></script>
+
+        
+        <footer>
+       
+        
+       
+            <div class="credits">
+                <a href="index.html">waterlike™2024</a>
+            </div>
+        </footer>
+        <svg class="svg">
+            <filter id="warp"> 
+              <feTurbulence
+              type="fractalNoise"
+              baseFrequency="0.001"| numOctaves="1" result="waves"
+              ></feTurbulence>
+          <feColorMatrix in="waves" type="hueRotate">
+          <animate
+          attributeName="values" 
+          values="0;360" 
+          dur="8s" 
+          repeatCount="indefinite"
+          ></animate>
+          </feColorMatrix>
+          <feDisplacementMap
+        xChannelSelector="R" 
+        yChannelSelector="G"
+          scale="50"
+          in="SourceGraphic"
+          ></feDisplacementMap>
+          </svg>
+    </body>
 </html>
