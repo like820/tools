@@ -206,15 +206,8 @@ max-width: 820px;
 
     margin: auto;
     border-color: #004282;
-<<<<<<< Updated upstream
-    /* border: solid 0.2em;
-    border-radius: 3em;
-    padding: 4em; */
-padding:0 2em 0 2em;
-=======
     padding:0 2em 0 2em;
 
->>>>>>> Stashed changes
 }
 .step-container .step{
     margin-top: 4rem;
@@ -245,12 +238,10 @@ iframe{
     /* columns: 200px; */
  display: flex;
  flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-end;
-    place-content: space-between;
+place-content: space-between;
 }
 .gallery img{
-    /* height: 100%; */
+    transition: all 0.82s;
 }
 .gallery-item{
     width: 100%;
@@ -266,16 +257,13 @@ iframe{
 }
 
 .gallery-item img.enlarged {
-position: relative;
-    top: 0;
-    left: -10em;
     margin: auto;
     object-fit: contain;
     z-index: 1000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(42px);
     transition: all 0.82s;
-    width: fit-content;
+    width: 82vw;
     max-height: 820px;
 }
 

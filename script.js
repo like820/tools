@@ -58,17 +58,17 @@ document.addEventListener('scroll', () => {
 
     //enlarge pictures on click and remove class when another gallery-item is clicked
 
-    let galleryItems = document.querySelectorAll('.gallery-item img');
-    galleryItems.forEach((item) => {
-        item.addEventListener('click', () => {
-            galleryItems.forEach((otherItem) => {
-                if (otherItem !== item) {
-                    otherItem.classList.remove('enlarged');
-                }
-            });
-            item.classList.toggle('enlarged');
-        });
-    });
+    // let galleryItems = document.querySelectorAll('.gallery-item img');
+    // galleryItems.forEach((item) => {
+    //     item.addEventListener('click', () => {
+    //         galleryItems.forEach((otherItem) => {
+    //             if (otherItem !== item) {
+    //                 otherItem.classList.remove('enlarged');
+    //             }
+    //         });
+    //         item.classList.toggle('enlarged');
+    //     });
+    // });
 
 //wetmode
     let checkbox = document.querySelector(".wetcheckbox");
