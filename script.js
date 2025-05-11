@@ -186,10 +186,10 @@ document.querySelectorAll('.toggle-title').forEach(element => {
 
     let shape = {
       kiki: 0.5,
-      points: 12,
+      points: 48,
       size: 40,
       targetKiki: 0.9,
-      targetPoints: 42,
+      targetPoints: 82,
       targetSize: 40,
       time: 0
     };
