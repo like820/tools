@@ -482,11 +482,6 @@ place-content: space-between;
         transform: translateX(-100%); /* Move left by 100% of the container */
     }
 }
-
-/* Pause scrolling on hover */
-.testimonial-strip:hover .testimonial-container {
-    animation-play-state: paused; /* Pause the animation */
-}
 .doodle{
     position: absolute;
     filter: blur(2px);
@@ -494,4 +489,8 @@ place-content: space-between;
     max-width: 320px;
     left: -4em;
     top:-4em;
+}
+/* Pause scrolling on hover */
+.testimonial-strip:hover .testimonial-container {
+    animation-play-state: paused; /* Pause the animation */
 }
