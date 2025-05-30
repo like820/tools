@@ -186,7 +186,7 @@ document.querySelectorAll('.toggle-title').forEach(element => {
 
     let shape = {
       kiki: 0.5,
-      points: 48,
+      points: 420,
       size: 40,
       targetKiki: 0.9,
       targetPoints: 82,
@@ -327,7 +327,7 @@ document.querySelectorAll('.toggle-title').forEach(element => {
 
 
 //testimonials interaction
-    const testimonialContainer = document.querySelector('.testimonial-container');
+let testimonialContainer = document.querySelector('.testimonial-container');
 
     testimonialContainer.addEventListener('mouseover', () => {
         testimonialContainer.style.animationPlayState = 'paused'; // Pause scrolling
