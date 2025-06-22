@@ -327,13 +327,15 @@ document.querySelectorAll('.toggle-title').forEach(element => {
 
 
 //testimonials interaction
-let testimonialContainer = document.querySelector('.testimonial-container');
 
-    testimonialContainer.addEventListener('mouseover', () => {
-        testimonialContainer.style.animationPlayState = 'paused'; // Pause scrolling
-    });
+
+// let testimonialContainer = document.querySelector('.testimonial-container');
+
+//     testimonialContainer.addEventListener('mouseover', () => {
+//         testimonialContainer.style.animationPlayState = 'paused'; // Pause scrolling
+//     });
     
-    testimonialContainer.addEventListener('mouseout', () => {
-        testimonialContainer.style.animationPlayState = 'running'; // Resume scrolling
-    });
+//     testimonialContainer.addEventListener('mouseout', () => {
+//         testimonialContainer.style.animationPlayState = 'running'; // Resume scrolling
+//     });
     

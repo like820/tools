@@ -378,6 +378,7 @@ place-content: space-between;
     filter: blur(12px);
     scale: 1.1;
     z-index: -200;
+    display: none;
   }
 
 .step {
